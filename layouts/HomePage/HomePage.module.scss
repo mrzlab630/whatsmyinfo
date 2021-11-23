@@ -1,0 +1,127 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+.HomePage{
+  @include container;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 3rem;
+
+  @media (min-width: $page-width-tab) {
+    padding-bottom: 0;
+  }
+
+
+  @media (min-width: $page-width-tab) {
+    @include block;
+    width: 100%;
+  }
+
+
+  & .info{
+    width: 100%;
+
+    @media (min-width: $page-width-tab) {
+      width: 40%;
+    }
+
+    & .infoWrap{
+      padding: 0;
+
+      @media (min-width: $page-width-tab) {
+        padding: 0 1.8rem;
+      }
+    }
+
+  }
+
+  & .notepad{
+    width: 100%;
+    position: relative;
+    min-height: 10rem;
+
+    @media (min-width: $page-width-tab) {
+      width: 60%;
+      min-height: 30rem;
+    }
+
+
+    & .notepadWrap{
+      position: relative;
+      width: 100%;
+      padding: 0;
+
+      & .mapWrap{
+        width: 100%;
+        min-height: 350px;
+      }
+
+    }
+
+
+  }
+
+  & .progress{
+
+  }
+
+  & .textArea{
+    width: 100%;
+    height: 15vh;
+  }
+
+  & .convertedDataWrap{
+    height: 25vh;
+    width: 100%;
+
+    & .convertedData{
+      cursor: default;
+      @include textArea;
+      margin-top: .4rem;
+      position: relative;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    & .clickTOcopy{
+      position: absolute;
+      z-index: 1;
+      right: .25rem;
+      font-weight: 100;
+      font-size: .8rem;
+      color: $cr-gray-light-two;
+    }
+  }
+
+
+
+  & .menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-left:0;
+
+    & .menuCenter{
+
+      @media (min-width: $page-width-tab) {
+      flex-grow: 1;
+      }
+    }
+
+    & .selectFile{
+      padding: 0.25em;
+
+      @media (min-width: $page-width-tab) {
+        padding: 0;
+      }
+    }
+
+  }
+
+}

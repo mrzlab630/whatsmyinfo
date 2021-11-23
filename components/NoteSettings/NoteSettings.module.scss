@@ -1,0 +1,97 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.NoteSettings{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+
+  & .wrap{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $page-width-tab) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+
+    & .block{
+      padding:0.3rem;
+      margin: 0;
+      width: 70%;
+
+      @media (min-width: $page-width-tab) {
+        width: auto;
+      }
+
+      & button{
+        width: 90%;
+        @media (min-width: $page-width-tab) {
+          width: auto;
+        }
+      }
+
+      & span{
+        font-size: 1.2rem;
+        line-height: 1.3;
+        font-weight: 300;
+        display: block;
+        @media (min-width: $page-width-tab) {
+        display: inline-block;
+        }
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+
+
+
+
+    }
+
+  }
+
+
+}
+
+.input{
+  text-align: center;
+  padding: .4rem;
+  margin:0 .3rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 300;
+
+  @media (min-width: $page-width-tab) {
+    padding: .3rem;
+    font-size: .9rem;
+  }
+
+}
+.inputWrap{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: .8rem 0;
+
+  @media (min-width: $page-width-tab) {
+    padding-top:0;
+    padding:0 .8rem;
+    display:inline;
+    text-align:left;
+  }
+
+}

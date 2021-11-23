@@ -1,0 +1,57 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.WhatsMyInfo{
+
+
+  & .row{
+   @include row;
+  }
+
+  & .col{
+    @include col;
+  }
+
+  & .item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .6rem;
+    cursor:default;
+
+    & .ip{
+      padding-left: 0;
+      margin-left: -.4rem;
+
+      &:hover{
+        border-bottom: 2px solid $cr-azure;
+      }
+    }
+
+    & span{
+      padding-left: .6rem;
+    }
+
+  }
+
+
+
+  & .iconH{
+    width: .6rem;
+    height: auto;
+
+    fill:$cr-white;
+  }
+
+
+  & .icon{
+    width: 1.5rem;
+    height: auto;
+
+    fill:$cr-white;
+  }
+
+}

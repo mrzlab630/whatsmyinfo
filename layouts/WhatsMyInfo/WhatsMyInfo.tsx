@@ -90,14 +90,8 @@ const WhatsMyInfo: FC<IWhatsMyInfo> = ({
         }
 
 
-        const {screen,location} = window
+        const {screen} = window
         const {width,height,pixelDepth,orientation} = screen
-
-        const hostname = location?.hostname
-        const origin = location?.origin
-
-        console.log({hostname,origin})
-
 
         setUserDisplay({
             width,

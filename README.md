@@ -2,6 +2,6 @@
 
 ## The Easiest Way To Find Your IP Address, Browser Information, etc.
 
-### [DEMO](https://whatsmyinfo.com])
+### [DEMO](https://whatsmyinfo.com/])
 
-######[geo data](https://ipgeolocation.io])
+######[geo data](https://ipgeolocation.io/])

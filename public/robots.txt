@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /private/
 Disallow: /dashboard/
-Sitemap: https://tinynotepad.com/sitemap.xml
+Sitemap: https://whatsmyinfo.com//sitemap.xml

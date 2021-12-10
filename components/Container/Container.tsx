@@ -36,6 +36,10 @@ const Container: FC<IContainer> = ({
         {
             lable:'contact us',
             url:'/contact'
+        },
+        {
+            lable:'tools',
+            url:'https://mrzlab630.pw/tools'
         }
     ])
 
@@ -97,7 +101,9 @@ const Container: FC<IContainer> = ({
                                     renderMenuBottom && <ul className={classes.menuBottom}>{renderMenuBottom}</ul>
                                 }
                             </div>
-                            <div className={classes.footerAuth}>by mrZLab630 &copy; {new Date().getFullYear()}</div>
+                            <div className={classes.footerAuth}>by  <Link href={'https://mrzlab630.pw'}>
+                                <a className={'link'}>&nbsp;mrZLab630</a>
+                            </Link> &copy; {new Date().getFullYear()}</div>
                         </div>
                     </div>
                 </div>

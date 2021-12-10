@@ -94,7 +94,11 @@
     & li{
       display: inline;
       list-style-type: none;
-      padding-left: 1rem;
+      padding-left: .1rem;
+
+      @media (min-width: $page-width-mobile-xl){
+        padding-left: 1rem;
+      }
 
       & a{
         text-transform: capitalize;

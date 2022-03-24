@@ -177,7 +177,9 @@ const WhatsMyInfo: FC<IWhatsMyInfo> = ({
 
         const {Icon,title,tooltip} = itm
 
-     return <div id={`renderInfo-${idx}-${Date.now()}`} className={classes.item}>
+     return <div
+         key={`renderInfo-${idx}-${Date.now()}`}
+         className={classes.item}>
             <Icon className={classes.icon}/>
             <Tooltip
                 title={tooltip}

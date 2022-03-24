@@ -74,7 +74,7 @@ const HomePage: NextPage<IHomePage> = ({
             }
 
             const {latitude, longitude,time_zone} = result
-            const {current_time_unix} = time_zone
+            const current_time_unix = time_zone?.current_time_unix ?? 0
 
             setIsp(result?.isp)
             setGeo({latitude, longitude})
@@ -82,7 +82,6 @@ const HomePage: NextPage<IHomePage> = ({
 
             setIsLoading(false)
 
-           // console.log({result})
         })()
     }, [ip])
 
